@@ -7,9 +7,9 @@ namespace DDS.Domain.Core.Abstractions.Model.Entities
     {
         public Guid Id { get; protected set; }
 
-        public DateTime DataCriacao { get; set; }
+        public DateTime DataCriacao { get; protected set; }
 
-        public DateTime DataUltimaAlteracao { get; set; }
+        public DateTime DataUltimaAlteracao { get; protected set; }
 
         protected Entity()
         {
