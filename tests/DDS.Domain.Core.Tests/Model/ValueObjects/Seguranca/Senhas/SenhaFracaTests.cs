@@ -1,7 +1,7 @@
 ﻿using DDS.Domain.Core.Model.ValueObjects.Seguranca.Senhas;
 using Xunit;
 
-namespace DDS.Domain.Core.Tests.Model.ValueObjects.Seguranca
+namespace DDS.Domain.Core.Tests.Model.ValueObjects.Seguranca.Senhas
 {
     public class SenhaFracaTests
     {
