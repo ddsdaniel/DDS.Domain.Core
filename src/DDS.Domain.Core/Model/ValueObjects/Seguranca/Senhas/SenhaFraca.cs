@@ -13,6 +13,7 @@ namespace DDS.Domain.Core.Model.ValueObjects.Seguranca.Senhas
             AddNotifications(new Contract()
                 .IsNotNullOrEmpty(conteudo, nameof(Conteudo), "O conteúdo da senha não deve ser vazio ou nulo")
                 .HasMinLengthIfNotNullOrEmpty(conteudo, tamanhoMinimo, nameof(TamanhoMinimo), $"O conteúdo da senha deve conter pelo menos {tamanhoMinimo} caracteres")
+                .IsGreaterOrEqualsThan(tamanhoMinimo, 0, nameof(TamanhoMinimo), "Tamanho mínimo não deve ser negativo")
                 );
 
             Conteudo = conteudo;
