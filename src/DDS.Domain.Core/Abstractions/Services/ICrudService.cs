@@ -11,6 +11,7 @@ namespace DDS.Domain.Core.Abstractions.Services
         Task Atualizar(TEntity entity);
         Task<TEntity> ConsultarPorId(Guid id);
         ICollection<TEntity> ConsultarTodos();
+        ICollection<TEntity> Pesquisar(string filtro);
         Task Excluir(Guid id);
         Task Commit();
     }

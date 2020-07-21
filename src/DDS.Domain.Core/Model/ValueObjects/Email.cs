@@ -9,6 +9,11 @@ namespace DDS.Domain.Core.Model.ValueObjects
     {
         public string Endereco { get; private set; }
 
+        protected Email()
+        {
+
+        }
+
         public Email(string endereco)
         {
             AddNotifications(new Contract()

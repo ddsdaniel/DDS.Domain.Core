@@ -9,10 +9,11 @@ namespace DDS.Domain.Core.Abstractions.Repositories
     public interface IRepository<TEntity> : INotifiable
         where TEntity : Entity
     {
+        public bool ConsultarSeExiste(Guid id);
         public Task<TEntity> ConsultarPorId(Guid id);
         public IQueryable<TEntity> AsQueryable();
         public Task Adicionar(TEntity entity);
         public Task Atualizar(TEntity entity);
-        public Task Excluir(Guid id);        
+        public Task Excluir(Guid id);
     }
 }
