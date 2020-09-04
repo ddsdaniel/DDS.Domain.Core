@@ -1,4 +1,4 @@
-﻿using DDS.Domain.Core.Abstractions.Model.Entities;
+﻿using DDS.Domain.Core.Abstractions.Models.Entities;
 using System;
 using System.Collections.Generic;
 using System.Threading.Tasks;

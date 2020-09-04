@@ -1,7 +1,7 @@
 ﻿using Flunt.Notifications;
 using System.Collections.Generic;
 
-namespace DDS.Domain.Core.Abstractions.Model.ValueObjects.Validacoes
+namespace DDS.Domain.Core.Abstractions.Models.ValueObjects.Validacoes
 {
     public interface INotifiable
     {

@@ -1,5 +1,5 @@
-﻿using DDS.Domain.Core.Abstractions.Model.Entities;
-using DDS.Domain.Core.Abstractions.Model.ValueObjects.Validacoes;
+﻿using DDS.Domain.Core.Abstractions.Models.Entities;
+using DDS.Domain.Core.Abstractions.Models.ValueObjects.Validacoes;
 using System;
 using System.Linq;
 using System.Threading.Tasks;

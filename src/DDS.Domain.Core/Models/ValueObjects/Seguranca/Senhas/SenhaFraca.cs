@@ -1,7 +1,7 @@
-﻿using DDS.Domain.Core.Abstractions.Model.ValueObjects;
+﻿using DDS.Domain.Core.Abstractions.Models.ValueObjects;
 using Flunt.Validations;
 
-namespace DDS.Domain.Core.Model.ValueObjects.Seguranca.Senhas
+namespace DDS.Domain.Core.Models.ValueObjects.Seguranca.Senhas
 {
     public class SenhaFraca : ValueObject<SenhaFraca>
     {

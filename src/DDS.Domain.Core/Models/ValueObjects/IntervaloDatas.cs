@@ -1,9 +1,9 @@
-﻿using DDS.Domain.Core.Abstractions.Model.ValueObjects;
+﻿using DDS.Domain.Core.Abstractions.Models.ValueObjects;
 using DDS.Domain.Core.Extensions;
 using Flunt.Validations;
 using System;
 
-namespace DDS.Domain.Core.Model.ValueObjects
+namespace DDS.Domain.Core.Models.ValueObjects
 {
     public class IntervaloDatas : ValueObject<IntervaloDatas>
     {

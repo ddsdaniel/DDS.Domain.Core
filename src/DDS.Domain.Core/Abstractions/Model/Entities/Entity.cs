@@ -1,7 +1,7 @@
 ﻿using Flunt.Notifications;
 using System;
 
-namespace DDS.Domain.Core.Abstractions.Model.Entities
+namespace DDS.Domain.Core.Abstractions.Models.Entities
 {
     public abstract class Entity : Notifiable
     {

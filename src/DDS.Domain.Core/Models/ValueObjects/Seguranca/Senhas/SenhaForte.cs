@@ -2,7 +2,7 @@
 using System;
 using System.Linq;
 
-namespace DDS.Domain.Core.Model.ValueObjects.Seguranca.Senhas
+namespace DDS.Domain.Core.Models.ValueObjects.Seguranca.Senhas
 {
     public class SenhaForte : SenhaMedia
     {

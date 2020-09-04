@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace DDS.Domain.Core.Abstractions.Model.ForeignKeys
+namespace DDS.Domain.Core.Abstractions.Models.ForeignKeys
 {
     public abstract class ForeignKey
     {
