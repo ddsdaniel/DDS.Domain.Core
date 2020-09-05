@@ -1,8 +1,8 @@
-﻿using Bogus;
-using DDS.Domain.Core.Model.ValueObjects;
+﻿using DDS.Domain.Core.Mocks.Models.ValueObjects;
+using DDS.Domain.Core.Models.ValueObjects;
 using Xunit;
 
-namespace DDS.Domain.Core.Tests.Model.ValueObjects
+namespace DDS.Domain.Core.Tests.Models.ValueObjects
 {
     public class EmailTests
     {
@@ -10,9 +10,7 @@ namespace DDS.Domain.Core.Tests.Model.ValueObjects
         public void Construtor_DadosValidos_Valid()
         {
             //Arrange & Act
-            var email = new Faker<Email>("pt_BR")
-              .CustomInstantiator(a => new Email(a.Internet.Email()))
-              .Generate();
+            var email = EmailMock.ObterValido();
 
             //Assert
             Assert.True(email.Valid);
