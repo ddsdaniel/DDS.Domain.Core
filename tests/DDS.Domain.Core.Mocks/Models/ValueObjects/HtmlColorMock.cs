@@ -11,5 +11,10 @@ namespace DDS.Domain.Core.Mocks.Models.ValueObjects
                .CustomInstantiator(p => new HtmlColor(p.Internet.Color()))
                .Generate();
         }
+
+        public static HtmlColor ObterInvalida()
+        {
+            return new HtmlColor("invalida");
+        }
     }
 }
