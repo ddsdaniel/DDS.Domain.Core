@@ -6,6 +6,7 @@
 
   <ItemGroup>
     <PackageReference Include="Flunt" Version="1.0.5" />
+    <PackageReference Include="MediatR" Version="8.1.0" />
   </ItemGroup>
 
   <ItemGroup>
