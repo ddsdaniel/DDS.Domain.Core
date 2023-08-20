@@ -9,10 +9,10 @@ namespace DDS.Domain.Core.Models.ValueObjects.Seguranca.Senhas
         public SenhaForte(string conteudo, int tamanhoMinimo) : base(conteudo, tamanhoMinimo)
         {
             AddNotifications(new Contract()
-                .IsTrue(ContemCaracteresEspeciais(conteudo),nameof(Conteudo),"O conteúdo da senha deve conter pelo menos um caracter especial")
+                .IsTrue(ContemCaracteresEspeciais(conteudo), nameof(Conteudo), "O conteúdo da senha deve conter pelo menos um caracter especial")
                 );
         }
 
-        private static bool ContemCaracteresEspeciais(string texto) => texto.Any(ch => !Char.IsLetterOrDigit(ch));
+        private static bool ContemCaracteresEspeciais(string texto) => texto.Any(ch => !char.IsLetterOrDigit(ch));
     }
 }

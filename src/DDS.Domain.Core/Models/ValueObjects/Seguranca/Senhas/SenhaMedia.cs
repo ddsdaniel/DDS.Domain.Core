@@ -16,7 +16,7 @@ namespace DDS.Domain.Core.Models.ValueObjects.Seguranca.Senhas
                 );
         }
 
-        private static bool ContemLetras(string texto) => texto.Any(ch => Char.IsLetter(ch));
-        private static bool ContemNumeros(string texto) => texto.Any(ch => Char.IsNumber(ch));
+        private static bool ContemLetras(string texto) => texto.Any(ch => char.IsLetter(ch));
+        private static bool ContemNumeros(string texto) => texto.Any(ch => char.IsNumber(ch));
     }
 }

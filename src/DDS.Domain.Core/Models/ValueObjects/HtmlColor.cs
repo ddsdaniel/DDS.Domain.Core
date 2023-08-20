@@ -26,7 +26,7 @@ namespace DDS.Domain.Core.Models.ValueObjects
 
         private static bool Validar(string codigo)
         {
-            if (String.IsNullOrEmpty(codigo))
+            if (string.IsNullOrEmpty(codigo))
                 return false;
 
             const string HEX_PATTERN = "^#([A-Fa-f0-9]{6}|[A-Fa-f0-9]{3})$";

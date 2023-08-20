@@ -21,13 +21,13 @@ namespace DDS.Domain.Core.Models.ValueObjects
                 .IsTrue(Validar(endereco), nameof(Endereco), "E-mail inválido")
                 );
 
-            if (!String.IsNullOrEmpty(endereco))
+            if (!string.IsNullOrEmpty(endereco))
                 Endereco = endereco.ToLower();
         }
 
         private static bool Validar(string endereco)
         {
-            if (String.IsNullOrEmpty(endereco))
+            if (string.IsNullOrEmpty(endereco))
                 return false;
 
             var regex = new Regex(@"^([\w\.\-]+)@([\w\-]+)((\.(\w){2,3})+)$");

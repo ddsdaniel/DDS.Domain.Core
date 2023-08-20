@@ -36,8 +36,8 @@ namespace DDS.Domain.Core.Models.ValueObjects
         public bool IsConflitante(IntervaloDatas outroIntervalo)
         {
             return outroIntervalo != null
-                && ((DataInicial.GetValueOrMin() <= outroIntervalo.DataFinal.GetValueOrMax() && DataFinal.GetValueOrMax() >= outroIntervalo.DataInicial.GetValueOrMin())
-                    || (outroIntervalo.DataInicial.GetValueOrMin() <= DataFinal.GetValueOrMax() && outroIntervalo.DataFinal.GetValueOrMax() >= DataInicial.GetValueOrMin()));
+                && (DataInicial.GetValueOrMin() <= outroIntervalo.DataFinal.GetValueOrMax() && DataFinal.GetValueOrMax() >= outroIntervalo.DataInicial.GetValueOrMin()
+                    || outroIntervalo.DataInicial.GetValueOrMin() <= DataFinal.GetValueOrMax() && outroIntervalo.DataFinal.GetValueOrMax() >= DataInicial.GetValueOrMin());
         }
 
         public bool EstaVigente(DateTime dataHoraBuscada)

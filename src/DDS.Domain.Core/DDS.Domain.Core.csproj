@@ -5,13 +5,18 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Compile Remove="Enums\**" />
+    <EmbeddedResource Remove="Enums\**" />
+    <None Remove="Enums\**" />
+  </ItemGroup>
+
+  <ItemGroup>
     <PackageReference Include="Flunt" Version="1.0.5" />
     <PackageReference Include="MediatR" Version="8.1.0" />
   </ItemGroup>
 
   <ItemGroup>
     <Folder Include="Abstractions\Model\ValueObjects\Seguranca\" />
-    <Folder Include="Enums\" />
   </ItemGroup>
 
 </Project>
